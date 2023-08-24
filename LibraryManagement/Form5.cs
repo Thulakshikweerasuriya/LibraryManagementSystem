@@ -39,7 +39,7 @@ namespace LibraryManagement
             MySqlCommand cmd = new MySqlCommand(sql, con);  //MySqlCommand object (cmd) created with the SQL query and the established database connection
 
 
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+           MySqlDataAdapter da = new MySqlDataAdapter(cmd);
            DataSet ds = new DataSet();
            da.Fill(ds);
            dataGridView1.DataSource = ds.Tables[0]; 
